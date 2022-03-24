@@ -1,0 +1,92 @@
+/* optimisation css. Tout en rem 5/20 */
+
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'Montserrat',sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background: #3b3b3b;
+    text-rendering:optimizeLegibility;
+}
+h1,h2,h3{
+    font-weight: 300;
+    margin: 0;
+}
+p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+/*
+    theme
+*/
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+*::-webkit-scrollbar {
+    width: .2rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
+header h1{
+    text-align: center;
+    color: #fff;
+}
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .slider img {
+    width: 100%;
+    display: none;
+  }
+  img.active {
+    display: block;
+    animation: fade 0.8s;
+    border: 1rem solid rgb(255, 255, 255);
+    border-bottom: none;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .cont-btn {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2rem 2rem rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .btn-nav {
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  button{
+      border: none;
+  }
